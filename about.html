@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <title>Интернет гипермаркет дверей</title>
+        <!-- Google Fonts: Roboto + Montserrat -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+        <!-- Font Awesome 6 Free CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-mDmwXIkBp/2TzRj+...etc" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header class="h-15 lg:h-20 flex items-stretch justify-between">
+            <div class="container flex mx-auto justify-between">
+				<!-- Mobile menu toggle -->
+                <div class="flex w-1/6 lg:hidden text-center items-center justify-center">
+                    <i class="fa-solid fa-bars text-2xl text-gray-600"></i>
+                </div>
+				<!-- Logo -->
+                <div class="flex w-3/5 lg:w-1/6 justify-center items-center border-r-1 border-gray-300">
+                    <img class="w-24 lg:w-30" src="images/logo.png" alt="">
+                    <p class="text-xs font pl-4 text-gray-500">Интернет<br>гипермаркет<br>дверей</p>
+                </div>
+				<!-- Nav Menu -->
+                <div class="hidden lg:flex lg:w-2/6 navmenu justify-center items-center">
+                    <li class="list-none px-5 font-bold text-gray-700 text-sm"><a href=""></i> Адреса магазинов</a></li>
+                    <li class="list-none px-5 font-bold text-gray-700 text-sm"><a href=""><i class="fa-solid fa-location-dot text-accent mr-2"></i> Грозный</a></li>
+                    <li class="list-none px-5 font-bold text-gray-700 text-sm"><a href=""><i class="fa-solid fa-home text-accent mr-2"></i> О компании</a></li>
+                    <li class="list-none px-5 font-bold text-gray-700 text-sm"><a href=""><i class="fa-solid fa-star text-accent mr-2"></i> Отзывы</a></li>
+                </div>
+				<!-- Banner icon -->
+                <div class="hidden lg:flex w-1/6 justify-center items-center border-l-1 border-gray-300">
+                    <img class="" src="images/акция.jpg" alt="">
+                </div>
+				<!-- Phone / workhours -->
+                <div class="hidden lg:flex lg:w-1/6 justify-center items-center border-l-1 border-gray-300">
+                    <i class="fa-solid fa-phone text-accent mr-2"></i>
+                    <div>
+                        <h3 class="font-bold text-xl">8 (901) 123-45-67</h3>
+                        <p class="text-xs text-gray-500">с 9:00 до 20:00, без выходных</p>
+                    </div>
+                </div>
+				<!-- Search icon -->
+                <div class="flex w-1/6 lg:w-25 justify-center items-center text-center border-l-1 border-gray-300">
+                    <!-- Search icon -->
+                    <a href="#"><i class="fa-solid fa-magnifying-glass text-xl text-gray-600"></i></a>
+                </div>
+				<!-- shopping cart icon -->
+                <div class="flex w-1/6 lg:flex-1 relative justify-center items-center border-l-1 text-white border-gray-300" style="background: #00a01c;">
+					<a class="flex gap-2" href="">
+						<img src="images/cart.png" alt="">
+						<p class="hidden lg:block">Корзина</p>
+						<p class="absolute right-0 top-0 px-2 py-1 text-sm bg-amber-500">4</p>
+					</a>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <div class="wrapper min-h-96 bg-gray-100">
+            <div class="container flex mx-auto">
+                <aside class="hidden w-1/6 min-h-screen p-4 fixed bg-gray-100">
+                    <!-- Shop categories links -->
+					<ul>
+						<li>
+							<a href="#" class="flex items-center justify-between w-full gap-2">
+								<span class="flex items-center gap-2">
+									<img src="images/Category_Icons/Входные двери.png" alt="" />
+									<span>Входные двери 1</span>
+								</span>
+								<i class="fa-solid fa-chevron-right text-sm"></i>
+							</a>
+						</li>
+						<li class="relative">
+							<a href="#" class="flex items-center justify-between w-full gap-2">
+							  <span class="flex items-center gap-2">
+								<img src="images/Category_Icons/Входные двери.png" alt="" />
+								<span>Входные двери 2</span>
+							  </span>
+							  <i class="fa-solid fa-chevron-right text-sm"></i>
+							</a>
+						  
+							<!-- Submenu opens right -->
+							<ul class="hidden hover: absolute top-0 left-full bg-white border shadow-md min-w-[200px]">
+							  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Submenu 1</a></li>
+							  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Submenu 2</a></li>
+							  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Submenu 3</a></li>
+							  <li class="relative">
+								<a href="#" class="block px-4 py-2 hover:bg-gray-100">Submenu 4</a>
+								<!-- Sub submenu opens right -->
+								<ul class="absolute top-0 left-full bg-white border shadow-md min-w-[200px]">
+								  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Sub submenu 1</a></li>
+								  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Sub submenu 2</a></li>
+								  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Sub submenu 3</a></li>
+								</ul>
+							  </li>
+							  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Submenu 5</a></li>
+							</ul>
+						  </li>
+						  
+					</ul>					
+                </aside>
+                <main class="w-full lg:w-5/6 lg:ml-[16.66%] p-4 text-gray-500">
+					<!-- Breadcrumb -->
+                    <p class="mb-4">
+						<a class="font-bold" href="#">Главная</a> <i class="fa text-xs px-2 fa-chevron-right text-accent" aria-hidden="true"></i>
+						<a href="#">О Компании</a>
+					</p>
+					
+					<h2 class="my-4 text-4xl font-bold text-gray-700">О нас</h2>
+
+                    <div style="">
+						<p class="mb-4">Группа компаний ТМК основана в 1998 году.</p>
+						<p class="mb-4">История компании начиналась с открытия первого производства металлических дверей в г.Тверь, объёмом производства около 250 дверей в месяц. В 2004 году компания открыла новое направление и своё первое производство метало-пластиковых светопрозрачных конструкций (Окна ПВХ), с объёмом производством — 300 окон в месяц. В 2004 году у компании было открыто 24 офиса продаж.</p>
+						<p class="mb-4">Сегодня «ТМК» производит широкий спектр продукции, которая необходима для комфорта и уюта вашего дома и офиса. Продукция ГК «ТМК» неоднократно выдерживала испытания на различных государственных объектах, а ее качество подтверждено лицензиями Госстроя России.</p>
+						<p class="mb-4">ТМК сегодня — это <span style="font-weight:600">федеральная</span>, успешная и динамично развивающаяся <span style="font-weight:600">компания</span>.</p>
+						<p class="mb-4">ТМК сегодня — <span style="font-weight:600">274 салона</span> продаж по всей территории ЦФО.</p>
+						<p class="mb-4">ТМК сегодня — это <span style="font-weight:600">2 современных завода по производству окон</span>, которые выпускают 20000 окон ежемесячно.</p>
+						<p class="mb-4">ТМК сегодня — это <span style="font-weight:600">современный завод по производству металлических дверей</span> с объёмом производства — 10000 дверей ежемесячно.</p>
+						<p class="mb-4">ТМК сегодня — это производство натяжных потолков с объёмом производства 40000 м<sup><small>2</small></sup> потолков ежемесячно.</p>
+						<p class="mb-4">ТМК сегодня — это прямые договоры с ведущими производителями межкомнатных дверей России, с объёмом продаж более 5000 полотен ежемесячно.</p>
+						<p class="mb-4">ТМК сегодня — это <span style="font-weight:600">собственная логистика</span> с транспортным парком более 40 единиц большегрузного автотранспорта.</p>
+						<p class="mb-4">ТМК сегодня — это самый крупный производителей окон из профиля КБЕ в России.</p>
+						<p class="mb-4">ТМК сегодня — это успешная и динамично развивающаяся компания.</p>
+						<p class="mb-4">ТМК сегодня — это молодые, энергичные, высокопрофессиональные специалисты.</p>
+						<p class="mb-4">С 2016 года наша компания предлагает выбору покупателя так же множество мебели и кухонь по лучшей цене от заводов производителей.</p>
+						<p class="mb-4">ТМК сегодня — предлагает большое разнообразие типов жалюзи различных расцветок и фактур, объёмом выпуска более 3000 м<sup><small>2</small></sup> в месяц.</p>
+						<p class="mb-4">ТМК сегодня — это 3000 высококвалифицированных сотрудников которые ежедневно своей работой делают всё для создания комфорта и уюта вашего дома.</p>
+						<p class="mb-4"><span style="font-weight:600">МЫ гарантируем Вам максимальное качество предоставляемых нами услуг.</span></p>
+						<p class="mb-4">Компания уделяет большое внимание развитию и поддержке собственной розничной сети. Сеть офисов «ТМК» работает на <span style="font-weight:600">всей территории центральной России.</span></p>
+						<p class="mb-4">Если вы хотите оставить свои пожелания или замечания к работе нашей компании, а может быть знаете как нам стать лучше, то вы всегда можете <a href="/o-kompanii/napisat-rukovoditelyu.html" style="font-weight:600">написать письмо</a> директору розницы ТМК Тимарову А.Е. Или позвонить на телефон горячей линии <a href="tel:+78007772578" style="font-weight:600"><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.923077;">8</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.846154;">8</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.769231;">0</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.692308;">0</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit;"> </small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.615385;">7</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.538462;">7</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.461538;">7</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.384615;">-</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.307692;">2</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.230769;">5</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.153846;">-</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0.0769231;">7</small><small style="display: inline; margin: 0px; padding: 0px; font-size: inherit; color: inherit; line-height: inherit; opacity: 0;">8</small></small></a></p>
+					</div>
+                </main>
+            </div>
+        </div>
+		<!-- Footer -->
+		<footer class="bg-secondary text-white w-full mt-12">
+			<div class="container mx-auto px-4 py-12">
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+					<!-- Column 1 -->
+					<div>
+						<h3 class="font-bold text-lg mb-4">ShopVista</h3>
+						<p class="text-gray-300 text-sm mb-4">Your trusted online shopping destination offering a wide range of products at competitive prices.</p>
+						<div class="flex space-x-4">
+							<a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+							<a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+							<a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+							<a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-pinterest"></i></a>
+						</div>
+					</div>
+					
+					<!-- Column 2 -->
+					<div>
+						<h3 class="font-bold text-lg mb-4">Customer Service</h3>
+						<ul class="space-y-2">
+							<li><a href="#" class="text-gray-300 hover:text-white text-sm">Contact Us</a></li>
+							<li><a href="#" class="text-gray-300 hover:text-white text-sm">FAQs</a></li>
+							<li><a href="#" class="text-gray-300 hover:text-white text-sm">Shipping Policy</a></li>
+							<li><a href="#" class="text-gray-300 hover:text-white text-sm">Returns & Exchanges</a></li>
+							<li><a href="#" class="text-gray-300 hover:text-white text-sm">Track Order</a></li>
+						</ul>
+					</div>
+					
+					<!-- Column 3 -->
+					<div>
+						<h3 class="font-bold text-lg mb-4">My Account</h3>
+						<ul class="space-y-2">
+							<li><a href="#" class="text-gray-300 hover:text-white text-sm">Sign In</a></li>
+							<li><a href="#" class="text-gray-300 hover:text-white text-sm">View Cart</a></li>
+							<li><a href="#" class="text-gray-300 hover:text-white text-sm">My Wishlist</a></li>
+							<li><a href="#" class="text-gray-300 hover:text-white text-sm">Order History</a></li>
+							<li><a href="#" class="text-gray-300 hover:text-white text-sm">Account Settings</a></li>
+						</ul>
+					</div>
+					
+					<!-- Column 4 -->
+					<div>
+						<h3 class="font-bold text-lg mb-4">Information</h3>
+						<ul class="space-y-2">
+							<li><a href="#" class="text-gray-300 hover:text-white text-sm">About Us</a></li>
+							<li><a href="#" class="text-gray-300 hover:text-white text-sm">Careers</a></li>
+							<li><a href="#" class="text-gray-300 hover:text-white text-sm">Privacy Policy</a></li>
+							<li><a href="#" class="text-gray-300 hover:text-white text-sm">Terms & Conditions</a></li>
+							<li><a href="#" class="text-gray-300 hover:text-white text-sm">Blog</a></li>
+						</ul>
+					</div>
+					
+					<!-- Column 5 -->
+					<div>
+						<h3 class="font-bold text-lg mb-4">Newsletter</h3>
+						<p class="text-gray-300 text-sm mb-4">Subscribe to receive updates, access to exclusive deals, and more.</p>
+						<form class="flex">
+							<input type="email" placeholder="Your email" class="px-3 py-2 text-gray-700 rounded-l w-full focus:outline-none">
+							<button class="bg-primary hover:bg-blue-700 text-white px-4 rounded-r">
+								<i class="fas fa-paper-plane"></i>
+							</button>
+						</form>
+					</div>
+				</div>
+				
+				<div class="border-t border-gray-700 mt-8 pt-8 text-center">
+					<p class="text-gray-400 text-sm">© 2023 ShopVista. All rights reserved. Designed with ❤️ for shoppers worldwide.</p>
+				</div>
+			</div>
+		</footer>
+    </body>
+</html>
