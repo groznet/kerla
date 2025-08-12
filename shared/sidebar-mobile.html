@@ -1,0 +1,226 @@
+<ul class="px-2">
+    <!-- Входные двери -->
+    <li x-data="{ open: false }">
+        <button @click="open = !open" class="w-full flex justify-between items-center p-2 hover:bg-gray-50">
+            <div class="flex items-center">
+                <img src="images/cat_menu_icons/Входные двери.png" alt="" class="w-5 h-5 mr-2">
+                <span>Входные двери</span>
+            </div>
+            <span x-text="open ? '−' : '+'"></span>
+        </button>
+        <ul x-show="open" x-transition class="pl-4">
+            <li x-data="{ open: false }">
+                <button @click="open = !open" class="w-full flex justify-between items-center p-2 hover:bg-gray-50">
+                    Квартирные двери
+                    <span x-text="open ? '−' : '+'"></span>
+                </button>
+                <ul x-show="open" x-transition class="pl-4">
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Серия Комфорт 6.0</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Серия Эталон</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">С умным(электронным) замком</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Серия Меркурий (эконом)</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <!-- Межкомнатные двери -->
+    <li x-data="{ open: false }">
+        <button @click="open = !open" class="w-full flex justify-between items-center p-2 hover:bg-gray-50">
+            <div class="flex items-center">
+                <img src="images/cat_menu_icons/Межкомнатные двери.png" alt="" class="w-5 h-5 mr-2">
+                <span>Межкомнатные двери</span>
+            </div>
+            <span x-text="open ? '−' : '+'"></span>
+        </button>
+        <ul x-show="open" x-transition class="pl-4">
+            <li x-data="{ open: false }">
+                <button @click="open = !open" class="w-full flex justify-between items-center p-2 hover:bg-gray-50">
+                    Двери ЭКОШПОН
+                    <span x-text="open ? '−' : '+'"></span>
+                </button>
+                <ul x-show="open" x-transition class="pl-4">
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция Smart X</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция HIT</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция Smart BASE</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция Smart NX</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция Smart QX</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция NoVa</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция SOLO</a></li>
+                </ul>
+            </li>
+            <li x-data="{ open: false }">
+                <button @click="open = !open" class="w-full flex justify-between items-center p-2 hover:bg-gray-50">
+                    Двери с отделкой PVC
+                    <span x-text="open ? '−' : '+'"></span>
+                </button>
+                <ul x-show="open" x-transition class="pl-4">
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция ALTO</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция FUTURA</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция DANTE</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция LAZIO</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция RIMINI</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция CENTRO</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция ECLIPT</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция RISE</a></li>
+                </ul>
+            </li>
+            <li x-data="{ open: false }">
+                <button @click="open = !open" class="w-full flex justify-between items-center p-2 hover:bg-gray-50">
+                    Двери Эмаль
+                    <span x-text="open ? '−' : '+'"></span>
+                </button>
+                <ul x-show="open" x-transition class="pl-4">
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция Contento FD</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция Contento 2023-2024</a></li>
+                </ul>
+            </li>
+            <li x-data="{ open: false }">
+                <button @click="open = !open" class="w-full flex justify-between items-center p-2 hover:bg-gray-50">
+                    Двери Эмалит
+                    <span x-text="open ? '−' : '+'"></span>
+                </button>
+                <ul x-show="open" x-transition class="pl-4">
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция ViVa</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция SOLO</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция FLY</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Коллекция SMART XP (Wood)</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="block p-2 hover:bg-gray-50">Двери с AL кромкой</a>
+            </li>
+            <li>
+                <a href="#" class="block p-2 hover:bg-gray-50">Складные двери</a>
+            </li>
+            <li>
+                <a href="#" class="block p-2 hover:bg-gray-50">Раздвижные двери</a>
+            </li>
+            <li x-data="{ open: false }">
+                <button @click="open = !open" class="w-full flex justify-between items-center p-2 hover:bg-gray-50">
+                    Фурнитура
+                    <span x-text="open ? '−' : '+'"></span>
+                </button>
+                <ul x-show="open" x-transition class="pl-4">
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Комплекты фурнитуры</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Ручки</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Замки и защёлки</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Петли</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Для раздвижных дверей</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Автопороги</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Откатная фурнитура</a></li>
+                    <li><a href="#" class="block p-2 hover:bg-gray-50">Сопутствующая фурнитура</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="block p-2 hover:bg-gray-50">Классические межкомнатные двери</a>
+            </li>
+            <li>
+                <a href="#" class="block p-2 hover:bg-gray-50">Межкомнатные двери Хай-тек</a>
+            </li>
+        </ul>
+    </li>
+
+    <!-- Интерьерные решения -->
+    <li x-data="{ open: false }">
+        <button @click="open = !open" class="w-full flex justify-between items-center p-2 hover:bg-gray-50">
+            <div class="flex items-center">
+                <img src="images/cat_menu_icons/Интерьерные решения.png" alt="" class="w-5 h-5 mr-2">
+                <span>Интерьерные решения</span>
+            </div>
+            <span x-text="open ? '−' : '+'"></span>
+        </button>
+        <ul x-show="open" x-transition class="pl-4">
+            <li><a href="#" class="block p-2 hover:bg-gray-50">Интерьерные рейки</a></li>
+            <li><a href="#" class="block p-2 hover:bg-gray-50">МДФ Плинтуса</a></li>
+            <li><a href="#" class="block p-2 hover:bg-gray-50">Межкомнатные арки PORTALe</a></li>
+        </ul>
+    </li>
+
+    <!-- Межкомнатные арки -->
+    <li x-data="{ open: false }">
+        <button @click="open = !open" class="w-full flex justify-between items-center p-2 hover:bg-gray-50">
+            <div class="flex items-center">
+                <img src="images/cat_menu_icons/Межкомнатные арки.png" alt="" class="w-5 h-5 mr-2">
+                <span>Межкомнатные арки</span>
+            </div>
+            <span x-text="open ? '−' : '+'"></span>
+        </button>
+        <ul x-show="open" x-transition class="pl-4">
+            <li><a href="#" class="block p-2 hover:bg-gray-50">Система PORTALe от FD</a></li>
+            <li><a href="#" class="block p-2 hover:bg-gray-50">Арки ПВХ</a></li>
+            <li><a href="#" class="block p-2 hover:bg-gray-50">Арки экошпон</a></li>
+        </ul>
+    </li>
+
+    <!-- Напольные покрытия -->
+    <li x-data="{ open: false }">
+        <button @click="open = !open" class="w-full flex justify-between items-center p-2 hover:bg-gray-50">
+            <div class="flex items-center">
+                <img src="images/cat_menu_icons/Напольные покрытия.png" alt="" class="w-5 h-5 mr-2">
+                <span>Напольные покрытия</span>
+            </div>
+            <span x-text="open ? '−' : '+'"></span>
+        </button>
+        <ul x-show="open" x-transition class="pl-4">
+            <li><a href="#" class="block p-2 hover:bg-gray-50">Ламинат</a></li>
+            <li><a href="#" class="block p-2 hover:bg-gray-50">Линолеум</a></li>
+            <li><a href="#" class="block p-2 hover:bg-gray-50">Плинтуса</a></li>
+            <li><a href="#" class="block p-2 hover:bg-gray-50">Дополнительные товары</a></li>
+        </ul>
+    </li>
+
+    <!-- Конструктор кухни 3D -->
+    <li>
+        <a href="#" class="flex items-center p-2 hover:bg-gray-50">
+            <img src="images/cat_menu_icons/Конструктор кухни 3D.png" alt="" class="w-5 h-5 mr-2">
+            <span>Конструктор кухни 3D</span>
+        </a>
+    </li>
+
+    <!-- Кованые изделия -->
+    <li x-data="{ open: false }">
+        <button @click="open = !open" class="w-full flex justify-between items-center p-2 hover:bg-gray-50">
+            <div class="flex items-center">
+                <img src="images/cat_menu_icons/Кованые изделия.png" alt="" class="w-5 h-5 mr-2">
+                <span>Кованые изделия</span>
+            </div>
+            <span x-text="open ? '−' : '+'"></span>
+        </button>
+        <ul x-show="open" x-transition class="pl-4">
+            <li><a href="#" class="block p-2 hover:bg-gray-50">Козырьки</a></li>
+            <li><a href="#" class="block p-2 hover:bg-gray-50">Решётки</a></li>
+            <li><a href="#" class="block p-2 hover:bg-gray-50">Ограды</a></li>
+        </ul>
+    </li>
+
+    <!-- Акции -->
+    <li>
+        <a href="#" class="flex items-center p-2 hover:bg-gray-50">
+            <img src="images/cat_menu_icons/Акции.png" alt="" class="w-5 h-5 mr-2">
+            <span>Акции</span>
+        </a>
+    </li>
+
+    <!-- О компании -->
+    <li x-data="{ open: false }">
+        <button @click="open = !open" class="w-full flex justify-between items-center p-2 hover:bg-gray-50">
+            <div class="flex items-center">
+                <img src="images/cat_menu_icons/О компании.png" alt="" class="w-5 h-5 mr-2">
+                <span>О компании</span>
+            </div>
+            <span x-text="open ? '−' : '+'"></span>
+        </button>
+        <ul x-show="open" x-transition class="pl-4">
+            <li><a href="#" class="block p-2 hover:bg-gray-50">О компании</a></li>
+        </ul>
+    </li>
+
+    <!-- Контакты -->
+    <li>
+        <a href="#" class="flex items-center p-2 hover:bg-gray-50">
+            <img src="images/cat_menu_icons/Контакты.png" alt="" class="w-5 h-5 mr-2">
+            <span>Контакты</span>
+        </a>
+    </li>
+</ul>
